@@ -1,0 +1,367 @@
+/*
+Theme Name:     Ceris Child
+Theme URI:
+Description:    Ceris Child Theme
+Author:         BK Ninja
+Author URI:
+Template:       ceris
+Version:  
+*/
+
+:root {
+  --primary: #c90e2b;
+  --white: #fff;
+}
+
+/* THEME LAYOUT */
+.kontakt .atbs-ceris-block--fullwidth .container,
+.prispet .atbs-ceris-block--fullwidth .container {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.navigation-bar {
+  height: 64px;
+}
+
+.navigation--main>li>a {
+  display: inline-block;
+  height: 64px;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 64px;
+  font-weight: 500;
+}
+
+.post__title.typescale-2,
+.entry-title.typescale-2,
+.post__title.typescale-3,
+.entry-title.typescale-3 {
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .typescale-2 {
+    font-size: 1.5rem;
+  }
+}
+
+.post__thumb img,
+.entry-thumb img,
+.post__thumb--overlay.post__thumb:after,
+.post__thumb a,
+.entry-thumb a,
+.post__thumb--overlay.post__thumb,
+.post--overlay,
+.post--overlay .post__text {
+  border-radius: 8px;
+}
+
+.post__thumb--width-400 .post__thumb {
+  width: 288px;
+}
+
+.post__excerpt {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fdfbf9;
+}
+
+.sticky-header .navigation-bar .header-logo img {
+  max-height: 50px;
+  position: relative;
+  top: -3px;
+}
+
+/* GLOBAL */
+@media (min-width: 768px) {
+  .single .site-content {
+    padding-bottom: 0;
+  }
+}
+
+.post__thumb .wp-post-image {
+  transition: all 0.2s ease-in-out;
+}
+
+.post__thumb .wp-post-image:hover,
+.post--overlay .post__thumb img:hover {
+  transform: scale(1.05) !important;
+}
+
+/* LIST */
+.post__meta .author_name--wrap {
+  display: none;
+}
+
+.post__title a {
+  transition: all ease-in-out 0.3s;
+}
+
+.posts-list .post__title a:hover,
+.list-item .post:hover a {
+  color: var(--primary);
+}
+
+.post--overlay .post__title a:hover {
+  color: var(--white);
+}
+
+/* SINGLE POST */
+
+@media (min-width: 992px) {
+
+  .typography-copy .h2,
+  .typography-copy h2,
+  .comment-content .h2,
+  .comment-content h2 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .typography-copy .h2,
+  .typography-copy h2,
+  .comment-content .h2,
+  .comment-content h2 {
+    font-size: 1.875em;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .typography-copy .h3,
+  .typography-copy h3,
+  .comment-content .h3,
+  .comment-content h3 {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .typography-copy .h3,
+  .typography-copy h3,
+  .comment-content .h3,
+  .comment-content h3 {
+    font-size: 1.25em;
+    line-height: 1.3;
+  }
+}
+
+.block-heading__title {
+  font-weight: 500;
+}
+
+.single .entry-title.post__title {
+  color: #3c2607;
+}
+
+.single-entry--template-4-alt .single-header-with-bg,
+.related-posts.lightgray-bg {
+  background-color: #f9f3ee;
+}
+
+.related-posts.lightgray-bg {
+  border-top: 1px solid #e2d3c7;
+  border-bottom: 1px solid #e2d3c7;
+}
+
+.related-posts .post__meta .entry-author__name,
+.related-posts .post__meta .entry-author__avatar {
+  display: none;
+}
+
+.related-posts .block-heading h4.block-heading__title {
+  color: rgb(0 0 0 / 85%) !important;
+}
+
+.single-entry--template-4-alt .single-header-with-bg {
+  box-shadow: 0 -1px 0 #e2d3c7 inset;
+}
+
+.single-body--content .author-box {
+  max-width: 100%;
+  border-top: 1px solid #f5ece1;
+  margin: 2rem 0 0;
+  padding: 4rem 0;
+}
+
+.single-body--content {
+  max-width: 730px;
+  border-bottom: 0;
+}
+
+.article-source {
+  clear: both;
+  margin-bottom: 1em;
+  padding: 1rem 0;
+  border-top: 1px solid #f5ece1;
+  border-bottom: 1px solid #f5ece1;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.article-source h6 {
+  margin-bottom: 0;
+}
+
+.article-source a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.article-source a:hover {
+  text-decoration: underline;
+}
+
+.article-source h6 {
+  margin-top: 0;
+}
+
+.article-source__name {
+  font-weight: normal;
+}
+
+.single .single-3 .atbs-ceris-block.related-posts,
+.single .single-3 .atbs-ceris-block.same-category-posts {
+  margin-bottom: 0;
+}
+
+/* CATEGORY */
+.page-heading__subtitle {
+  margin-top: 16px;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+a.post__cat:before {
+  display: none !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-675"] {
+  background-color: #f7e8ff !important;
+  color: #7606e5 !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-1151"] {
+  background-color: #fff181 !important;
+  color: #675e09 !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-1152"] {
+  color: #042e2f !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-1154"] {
+  background-color: #ffe4fb !important;
+  color: #56164d !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-1155"] {
+  color: #28607b !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-1156"] {
+  background-color: #eae6dd !important;
+  color: #75561d !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-772"] {
+  background-color: #fbd6b7 !important;
+  color: #6b370c !important;
+}
+
+a.post__cat.post__cat--bg[class*="cat-951"] {
+  background-color: #ffdaee !important;
+  color: #7a1877 !important;
+}
+
+/* CCB YT Plugin */
+.ccb_single_video_player {
+  margin-bottom: 2em;
+}
+
+/* SIDEBAR */
+.posts-list .media-middle {
+  vertical-align: top;
+}
+
+.atbs-ceris-widget-indexed-posts-a .list-index {
+  font-size: 1.5rem;
+  opacity: 1;
+  color: rgb(192, 192, 192);
+  background: none;
+}
+
+/* NAV */
+.page-item-19173 a,
+.menu-item-20166 a {
+  color: #c90e2b !important;
+}
+
+/* HP Quote */
+blockquote.quotescollection-quote {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.quotescollection-quote .attribution {
+  text-align: left;
+}
+
+blockquote .small:before,
+blockquote footer:before,
+blockquote small:before {
+  display: none;
+}
+
+#ceris_grid_q-5ffcc6641f876,
+#ceris_shortcode-5ffcc5c933df3 {
+  margin-bottom: 64px;
+}
+
+/* WIDGETS */
+.widget .posts-list .post__title a:hover {
+  color: var(--primary);
+}
+
+/* CONTACT FORM 7 */
+.wpcf7 .ajax-loader {
+  margin: 1em 0;
+}
+
+.textwidget input {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 0;
+}
+
+.wpcf7-form textarea {
+  background-color: var(--white);
+}
+
+/* POST SERIES */
+.post-series-list {
+  list-style: decimal;
+  margin: 1.5em 0 0 !important;
+}
+
+.post-series-item {
+  overflow: initial !important;
+  margin-top: 0.5em !important;
+}
+.post-series p {
+  display: none;
+}

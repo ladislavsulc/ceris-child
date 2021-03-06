@@ -1,0 +1,84 @@
+/* WP GIVE */
+
+.donation-form h4 {
+  text-align: center;
+}
+
+body,
+.give-btn {
+  font-family: Inter, sans-serif;
+}
+
+.choose-amount .give-donation-levels-wrap .give-donation-level-btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.choose-amount .give-donation-amount .give-amount-top {
+  font-family: Inter, sans-serif;
+  height: auto !important;
+  width: 112px !important;
+  font-weight: 500 !important;
+  font-size: 34px !important;
+}
+
+.choose-amount .give-donation-amount {
+  padding: 16px;
+}
+
+.give-btn {
+  font-size: 24px;
+  background: #d4cbc3 !important;
+  border: 2px solid #d4cbc3 !important;
+  color: #25211d !important;
+  transition: 0.2s all ease-in-out;
+}
+
+.give-btn:hover,
+.give-btn.give-default-level,
+.give-btn.give-default-level:hover {
+  background: #2cb53d !important;
+  border: 2px solid #2cb53d !important;
+  color: #fff !important;
+}
+
+.give-btn:hover {
+  filter: brightness(1);
+}
+
+.give-btn.advance-btn,
+.give-submit.give-btn {
+  background: #c90e2b !important;
+  border: 2px solid #c90e2b !important;
+  color: #fff !important;
+}
+
+.give-btn.advance-btn:hover,
+.give-submit.give-btn:hover {
+  filter: brightness(1.2);
+}
+
+.choose-amount
+  .give-donation-amount
+  span.give-currency-symbol.give-currency-position-after {
+  padding-left: 16px !important;
+}
+
+.choose-amount
+  .give-donation-levels-wrap
+  .give-donation-level-btn
+  > .currency.currency--after {
+  margin: 0 0 -4px 6px;
+}
+
+.choose-amount .content {
+  margin: 36px 48px 30px;
+}
+
+.form-footer .secure-notice {
+  color: #17bd2b;
+}
+
+.receipt .details .details-table .details-row {
+  font-weight: 400;
+}
